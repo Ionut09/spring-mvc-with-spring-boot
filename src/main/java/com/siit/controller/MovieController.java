@@ -7,7 +7,7 @@ import com.siit.domain.Movie;
 import com.siit.service.MovieService;
 
 @RestController
-@RequestMapping("/app")
+@RequestMapping("/app") // requesturi de forma http://localhost:9999/app/movies
 public class MovieController {
 
 	@Autowired
