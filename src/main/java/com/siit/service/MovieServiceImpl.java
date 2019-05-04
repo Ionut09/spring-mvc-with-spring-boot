@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.siit.domain.Movie;
-import com.siit.repository.MovieRepo;
-import com.siit.repository.MovieRepository;
+import com.siit.repository.jdbc.MovieRepository;
+import com.siit.repository.jpa.MovieRepo;
 
 @Service
 public class MovieServiceImpl implements MovieService {
