@@ -1,5 +1,7 @@
 package com.siit.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,10 +21,10 @@ public class MovieController {
 	}
 
 	// @RequestMapping(value = "/movies", method = RequestMethod.GET)
-//	@GetMapping("/movies")
-//	public List<Movie> getAllMovies() {
-//		return movieService.getAllMovies();
-//	}
+	@GetMapping("/all-movies")
+	public List<Movie> getAllMovies() {
+		return movieService.getAllMovies();
+	}
 
 	@GetMapping("/movies/{id}")
 	public Movie getMovieByIdWithPathVariable(@PathVariable("id") String movieId) {
